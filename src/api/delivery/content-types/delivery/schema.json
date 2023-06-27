@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "deliverys",
+  "info": {
+    "singularName": "delivery",
+    "pluralName": "deliverys",
+    "displayName": "Entrega",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "cep": {
+      "type": "biginteger",
+      "required": true
+    },
+    "rua": {
+      "type": "text",
+      "required": true
+    },
+    "bairro": {
+      "type": "string",
+      "required": true
+    },
+    "cidade": {
+      "type": "string",
+      "required": true
+    },
+    "estado": {
+      "type": "string",
+      "required": true
+    },
+    "complemento": {
+      "type": "text"
+    },
+    "numero": {
+      "type": "string",
+      "required": true
+    },
+    "delivery": {
+      "type": "component",
+      "repeatable": false,
+      "component": "order.modificador-de-produto-de-pedido"
+    }
+  }
+}

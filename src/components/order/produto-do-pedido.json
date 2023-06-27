@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_order_produto_do_pedidos",
+  "info": {
+    "displayName": "Produto do Pedido",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product.product"
+    },
+    "totalPrice": {
+      "type": "decimal",
+      "required": true
+    },
+    "basePrice": {
+      "type": "decimal",
+      "required": false
+    },
+    "modifiers": {
+      "displayName": "Modificador de Produto do Pedido",
+      "type": "component",
+      "repeatable": true,
+      "component": "order.modificador-de-produto-do-pedido"
+    }
+  }
+}

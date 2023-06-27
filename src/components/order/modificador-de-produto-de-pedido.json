@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_order_modificador_de_produto_de_pedidos",
+  "info": {
+    "displayName": "Modificador de produto de Pedido",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "pedido": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::order.order"
+    }
+  }
+}
